@@ -7,29 +7,40 @@
     <title>Act 14 - Form</title>
 </head> 
 <body>
+    <h1>ACT 14 - verificacion  y validacion de software</h1>
     <div id="container">
         <form id="form">
+            <label for="name">Nombre:</label>
             <input type="text" id="name" placeholder="Nombre">
+        
+            <label for="lastname">Apellido:</label>
             <input type="text" id="lastname" placeholder="Apellido">
+        
+            <label for="age">Edad:</label>
             <input type="number" id="age" placeholder="Edad">
-            <label for="country">Pais: </label>
+        
+            <label for="country">País:</label>
             <select name="country" id="country">
-                <option value="">-- Escoge un pais --</option>
-                <option value="mexico">Mexico</option>
+                <option value="">-- Escoge un país --</option>
+                <option value="mexico">México</option>
                 <option value="usa">USA</option>
             </select>
-    
-            <label for="city">Ciudad: </label>
+        
+            <label for="city">Ciudad:</label>
             <select name="city" id="city">
                 <option value="">-- Escoge una ciudad --</option>
             </select>
-    
-            <input type="text" id="address" placeholder="Direccion">
+        
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" placeholder="Dirección">
+        
+            <label for="balance">Balance:</label>
             <input type="number" id="balance" placeholder="Balance">
-    
+        
             <button type="submit" id="confirm">CONFIRMAR</button>
             <button type="button" id="cancel">CANCELAR</button>
         </form>
+        
     
         <div id="list">
             <h2>DEMO DE COMO ENTRARIAN LOS DATOS A LA DB</h2>

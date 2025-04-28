@@ -30,6 +30,8 @@ body {
 #form label {
     font-weight: 500;
     text-align: right;
+    margin-right: 5px;
+    white-space: nowrap;
 }
 
 #form input,
