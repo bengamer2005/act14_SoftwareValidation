@@ -98,6 +98,22 @@ document.addEventListener("DOMContentLoaded", () => {
             balance
         }
 
+        if (window.appInsights) {
+            appInsights.trackEvent({
+                name: "FormularioEnviado",
+                properties: {
+                    id: id,
+                    nombre: name,
+                    apellido: lastname,
+                    edad: age,
+                    pais: country,
+                    ciudad: city,
+                    direccion: address,
+                    balance: balance
+                }
+            });
+        }
+
         const customersList = document.getElementById("list");
 
         const customerDiv = document.createElement("div");
